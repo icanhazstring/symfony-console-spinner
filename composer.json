@@ -1,0 +1,20 @@
+{
+    "name": "icanhazstring/symfony-console-spinner",
+    "description": "Custom symfony progressbar spinner",
+    "keywords": [
+        "symfony",
+        "console",
+        "spinner"
+    ],
+    "type": "library",
+    "require": {
+        "symfony/console": "^4.3",
+        "php": "^7.3"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "icanhazstring\\SymfonyConsoleSpinner\\": "src"
+        }
+    }
+}
