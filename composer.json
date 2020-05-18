@@ -8,7 +8,7 @@
     ],
     "type": "library",
     "require": {
-        "symfony/console": "^4.3",
+        "symfony/console": "^4.3 || ^5.0",
         "php": "^7.3"
     },
     "license": "MIT",
