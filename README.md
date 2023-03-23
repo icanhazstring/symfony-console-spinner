@@ -33,8 +33,14 @@ the maximum count of items to process:
         
         $spinner->finish();
     } 
-    
-   
+
+You can also get the underlying `ProgressBar` instance if you want to change anything, for example adding the elapsed time to the output format:
+
+```php
+$spinner = new SpinnerProgress($output, 100);
+$spinner->getProgressBar()->setFormat('%bar% (%elapsed:6s%) %message%');
+```
+
 ## License
 
 This package is released under the [MIT license](LICENSE).
