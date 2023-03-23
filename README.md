@@ -31,12 +31,22 @@ public function execute(OutputInterface $output, InputInterface $input)
     $spinner = new SpinnerProgress($output, 100);
 
     for($i = 0; $i < 100; $i++) {
+
         usleep(1000);
+
         $spinner->advance();
+
     }
 
     $spinner->finish();
 }
+```
+
+You can also get the underlying `ProgressBar` instance if you want to change anything, for example adding the elapsed time to the output format:
+
+```php
+$spinner = new SpinnerProgress($output, 100);
+$spinner->getProgressBar()->setFormat('%bar% (%elapsed:6s%) %message%');
 ```
 
 ## License

@@ -47,4 +47,9 @@ class SpinnerProgress
     {
         $this->progressBar->finish();
     }
+
+    public function getProgressBar(): ProgressBar
+    {
+        return $this->progressBar;
+    }
 }
