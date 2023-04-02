@@ -22,7 +22,7 @@ class SpinnerProgress
 
     public function __construct(OutputInterface $output, int $max = 0)
     {
-        $this->progressBar = new ProgressBar($output->section(), $max);
+        $this->progressBar = new ProgressBar($output, $max);
         $this->progressBar->setBarCharacter('✔');
         $this->progressBar->setFormat('%bar%  %message%');
         $this->progressBar->setBarWidth(1);
