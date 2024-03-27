@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.1.1] - 2024-03-27
+### Added
+- Added support for symfony/console:^7
+
 ## [1.1.0] - 2023-03-23
 ### Added
 - Added `SpinngerProgress::getProgressBar()` to be able to set format in underlying progressBar instance
